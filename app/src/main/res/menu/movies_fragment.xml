@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+/**
+ * Copyright (C) 2015 Mohamed Fathy
+ * <p/>
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * <p/>
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * <p/>
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:apps="ttp://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.MainActivity">
+
+    <item
+        android:id="@+id/action_sort"
+        android:icon="@drawable/action_sort"
+        android:orderInCategory="2"
+        android:title="@string/action_sort"
+        app:showAsAction="ifRoom">
+        <menu>
+            <group
+                android:id="@+id/sort_group"
+                android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/action_fav"
+                    android:orderInCategory="3"
+                    android:title="@string/action_fav"
+                    apps:showAsAction="never" />
+
+                <item
+                    android:id="@+id/action_high"
+                    android:orderInCategory="2"
+                    android:title="@string/action_high"
+                    apps:showAsAction="never" />
+
+                <item
+                    android:id="@+id/action_pop"
+                    android:checked="true"
+                    android:orderInCategory="1"
+                    android:title="@string/action_pop"
+                    apps:showAsAction="never" />
+
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/action_up"
+        android:icon="@drawable/slide_up"
+        android:orderInCategory="1"
+        android:title="@string/go_top"
+        app:showAsAction="always" />
+
+</menu>

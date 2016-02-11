@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#721324</color>
+    <color name="colorTransBar">#30000000</color>
+    <color name="colorPrimary">#8c172c</color>
+    <color name="colorAccent">#6b4d9c</color>
+    <color name="tabBackColor">#ffeeeeee</color>
+</resources>
